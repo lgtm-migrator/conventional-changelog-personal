@@ -8,11 +8,13 @@ install: npm install
 before_install:
   - npm install -g greenkeeper-lockfile
   - greenkeeper-lockfile-update
+before_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; fi;
+script: if [[ $GH_TOKEN ]]; then npm test; fi;
 cache:
   directories:
     - node_modules
 before_cache: rm -rf node_modules/.cache
-after_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; greenkeeper-lockfile-upload; fi;
+after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
 
 stages:
   - Test
@@ -23,6 +25,6 @@ jobs:
   include:
   - stage: Release
     node_js: stable
-    before_install: ./prepare-gpg-key.sh
-    script: semantic-release
+    before_install: []
+    script: if [[ $GH_TOKEN ]]; then semantic-release; fi;
     after_script: []
