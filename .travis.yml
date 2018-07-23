@@ -24,7 +24,7 @@ stages:
 jobs:
   include:
   - stage: Release
-    node_js: stable
+    node_js: lts/*
     before_install: []
     script: if [[ $GH_TOKEN ]]; then semantic-release; fi;
     after_script: []
