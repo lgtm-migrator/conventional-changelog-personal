@@ -4,7 +4,7 @@
   "description": "Personal conventional-changelog preset based on conventional-changelog-angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo foo"
+    "test": "semantic-release --dry-run"
   },
   "repository": {
     "type": "git",
