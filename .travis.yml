@@ -3,7 +3,6 @@ sudo: false
 node_js:
   - stable
   - lts/carbon
-  - lts/boron
 install: npm install
 before_install:
   - npm install -g greenkeeper-lockfile
