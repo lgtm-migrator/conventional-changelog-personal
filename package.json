@@ -1,0 +1,19 @@
+{
+  "name": "@alorel-personal/conventional-changelog-angular",
+  "version": "0.0.0",
+  "description": "Personal conventional-changelog preset based on conventional-changelog-angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo foo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alorel/conventional-changelog-personal.git"
+  },
+  "author": "Alorel <a.molcanovas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alorel/conventional-changelog-personal/issues"
+  },
+  "homepage": "https://github.com/Alorel/conventional-changelog-personal#readme"
+}
