@@ -1,5 +1,5 @@
 {
-  "name": "@alorel-personal/conventional-changelog-angular",
+  "name": "@alorel-personal/conventional-changelog-alorel",
   "version": "0.0.0",
   "description": "Personal conventional-changelog preset based on conventional-changelog-angular",
   "main": "index.js",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/Alorel/conventional-changelog-personal/issues"
   },
-  "homepage": "https://github.com/Alorel/conventional-changelog-personal#readme"
+  "homepage": "https://github.com/Alorel/conventional-changelog-personal#readme",
+  "dependencies": {
+    "conventional-changelog-angular": "^5.0.0",
+    "json5": "^1.0.0",
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/git": "^7.0.1",
+    "@semantic-release/npm": "^4.0.1",
+    "semantic-release": "^15.8.1"
+  }
 }
