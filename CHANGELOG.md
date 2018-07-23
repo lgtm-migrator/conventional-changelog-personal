@@ -1,3 +1,20 @@
+## [1.0.1](https://github.com/Alorel/conventional-changelog-personal/compare/1.0.0...1.0.1) (2018-07-23)
+
+
+### Bug Fixes
+
+* Switched texts for "docs" and "revert" ([980124b](https://github.com/Alorel/conventional-changelog-personal/commit/980124b))
+
+
+### Documentation
+
+* **CHANGELOG:** Changed "Reverts" to "Documentation" in v1 ([3e202cd](https://github.com/Alorel/conventional-changelog-personal/commit/3e202cd))
+
+
+### Maintenance
+
+* add unnecessary production files to npmignore ([0b4d658](https://github.com/Alorel/conventional-changelog-personal/commit/0b4d658))
+
 # 1.0.0 (2018-07-23)
 
 
