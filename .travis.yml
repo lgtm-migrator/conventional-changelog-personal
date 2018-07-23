@@ -10,5 +10,19 @@ before_install:
   - greenkeeper-lockfile-update
 cache:
   directories:
-  - node_modules
+    - node_modules
 before_cache: rm -rf node_modules/.cache
+after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
+
+stages:
+  - Test
+  - name: Release
+    if: branch = master
+
+jobs:
+  include:
+  - stage: Release
+    node_js: stable
+    before_install: []
+    script: semantic-release
+    after_script: []
