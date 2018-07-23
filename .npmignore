@@ -1,3 +1,4 @@
 /node_modules/
 /.idea/
 /git_gpg_keys.asc
+/git_gpg_keys.asc.enc

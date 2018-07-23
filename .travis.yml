@@ -12,7 +12,7 @@ cache:
   directories:
     - node_modules
 before_cache: rm -rf node_modules/.cache
-after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
+after_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; greenkeeper-lockfile-upload; fi;
 
 stages:
   - Test
@@ -23,6 +23,6 @@ jobs:
   include:
   - stage: Release
     node_js: stable
-    before_install: []
+    before_install: ./prepare-gpg-key.sh
     script: semantic-release
     after_script: []
