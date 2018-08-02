@@ -4,6 +4,10 @@ function isGreenkeeperLockfileCommit(commit) {
   return commit.scope === 'package' && (commit.message || '').includes('update lockfile');
 }
 
+function isGreenkeeperUpdate(commit) {
+  return commit.message && commit.scope === 'fix' && /update.+to\s+version\s+/i.test(commit.message);
+}
+
 function getCfg() {
   const env = process.env.CHANGELOG_ALOREL_CFG;
 
@@ -48,7 +52,15 @@ function getCfg() {
 
 function processCommitType(commit) {
   const cfg = getCfg();
+
+  if (cfg.enable.fix && isGreenkeeperUpdate(commit)) {
+    commit.type = 'Dependency updates';
+
+    return true;
+  }
+
   let typeMatched = false;
+
   for (const type of Object.keys(cfg.texts)) {
     if (type === 'chore') {
       if (commit.type === 'chore') {
