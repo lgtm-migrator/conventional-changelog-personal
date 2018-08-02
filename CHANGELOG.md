@@ -1,3 +1,22 @@
+# [1.1.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.0.1...1.1.0) (2018-08-02)
+
+
+### Build System
+
+* don't execute semantic-release dry run if env is not set ([cfdabdc](https://github.com/Alorel/conventional-changelog-personal/commit/cfdabdc))
+* remove lts/boron ([66974b3](https://github.com/Alorel/conventional-changelog-personal/commit/66974b3))
+* use lts/* for releases ([7185c09](https://github.com/Alorel/conventional-changelog-personal/commit/7185c09))
+
+
+### Features
+
+* process Greenkeeper dependency update commits in their own category ([1b6b5be](https://github.com/Alorel/conventional-changelog-personal/commit/1b6b5be))
+
+
+### Tests
+
+* Make a semantic-release dry run for testing ([ce86a75](https://github.com/Alorel/conventional-changelog-personal/commit/ce86a75))
+
 ## [1.0.1](https://github.com/Alorel/conventional-changelog-personal/compare/1.0.0...1.0.1) (2018-07-23)
 
 
