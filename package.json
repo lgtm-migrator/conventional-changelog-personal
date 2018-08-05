@@ -28,6 +28,6 @@
     "@semantic-release/changelog": "^3.0.0",
     "@semantic-release/git": "^7.0.1",
     "@semantic-release/npm": "^5.0.1",
-    "semantic-release": "^15.8.1"
+    "semantic-release": "^15.9.0"
   }
 }
