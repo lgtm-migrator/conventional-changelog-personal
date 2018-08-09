@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.1.0...1.2.0) (2018-08-09)
+
+
+### Features
+
+* Ignore release scope from changelog ([c460690](https://github.com/Alorel/conventional-changelog-personal/commit/c460690))
+
+
+### Maintenance
+
+* **package:** Refresh package-lock.json ([1da1fd6](https://github.com/Alorel/conventional-changelog-personal/commit/1da1fd6))
+* **package:** update [@semantic-release](https://github.com/semantic-release)/npm to version 5.0.1 ([546337d](https://github.com/Alorel/conventional-changelog-personal/commit/546337d)), closes [#2](https://github.com/Alorel/conventional-changelog-personal/issues/2)
+
 # [1.1.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.0.1...1.1.0) (2018-08-02)
 
 
