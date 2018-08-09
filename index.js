@@ -36,7 +36,8 @@ function getCfg() {
       ci: 'Build System',
       chore: 'Maintenance'
     },
-    skipGreenkeeperLockfileCommit: true
+    skipGreenkeeperLockfileCommit: true,
+    ignoreReleaseScope: true
   };
 
   if (env) {
@@ -52,6 +53,10 @@ function getCfg() {
 
 function processCommitType(commit) {
   const cfg = getCfg();
+
+  if (cfg.ignoreReleaseScope && commit.scope === 'release') {
+    return false;
+  }
 
   if (cfg.enable.fix && isGreenkeeperUpdate(commit)) {
     commit.type = 'Dependency updates';
