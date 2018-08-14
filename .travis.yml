@@ -18,7 +18,7 @@ after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
 stages:
   - Test
   - name: Release
-    if: branch = master
+    if: branch = master AND tag IS blank AND type = push
 
 jobs:
   include:
