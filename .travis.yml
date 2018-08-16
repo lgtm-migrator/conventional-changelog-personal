@@ -9,7 +9,7 @@ before_install:
   - npm install -g greenkeeper-lockfile yarn
   - greenkeeper-lockfile-update
 
-install: yarn install
+install: yarn install --check-files
 
 before_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; fi;
 
