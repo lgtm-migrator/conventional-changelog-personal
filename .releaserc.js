@@ -4,7 +4,16 @@ module.exports = {
   prepare: [
     '@semantic-release/changelog',
     '@semantic-release/npm',
-    '@semantic-release/git'
+    {
+      path: '@semantic-release/git',
+      message: 'chore(release): ${nextRelease.version}',
+      assets: [
+        'CHANGELOG.md',
+        'README.md',
+        'package.json',
+        'yarn.lock'
+      ]
+    }
   ],
   generateNotes: {
     config: require.resolve('./index.js')

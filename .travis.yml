@@ -1,18 +1,27 @@
 language: node_js
 sudo: false
+
 node_js:
   - stable
   - lts/carbon
-install: npm install
+
 before_install:
-  - npm install -g greenkeeper-lockfile
+  - npm install -g greenkeeper-lockfile yarn
   - greenkeeper-lockfile-update
+
+install: yarn install
+
 before_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; fi;
-script: if [[ $GH_TOKEN ]]; then npm test; fi;
+
+script: if [[ $GH_TOKEN ]]; then yarn test; fi;
+
 cache:
+  yarn: true
   directories:
     - node_modules
+
 before_cache: rm -rf node_modules/.cache
+
 after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
 
 stages:
@@ -24,6 +33,6 @@ jobs:
   include:
   - stage: Release
     node_js: lts/*
-    before_install: []
+    before_install: npm install -g yarn
     script: if [[ $GH_TOKEN ]]; then semantic-release; fi;
     after_script: []
