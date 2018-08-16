@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.2.0...2.0.0) (2018-08-16)
+
+
+### Maintenance
+
+* Disable "build" and "ci" by default ([599344c](https://github.com/Alorel/conventional-changelog-personal/commit/599344c))
+
+
+### BREAKING CHANGES
+
+* Disable "build" and "ci" by default
+
 # [1.2.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.1.0...1.2.0) (2018-08-09)
 
 
