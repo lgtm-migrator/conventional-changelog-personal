@@ -20,8 +20,8 @@ function getCfg() {
       revert: true,
       refactor: true,
       test: true,
-      build: true,
-      ci: true,
+      build: false,
+      ci: false,
       chore: true
     },
     texts: {
