@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.1...2.0.2) (2018-08-17)
+
+
+### Bug Fixes
+
+* **package:** Add yarn.lock to npmignore ([6874a19](https://github.com/Alorel/conventional-changelog-personal/commit/6874a19))
+* Production dependency Greenkeeper updates now correctly fall under the right category ([9665cff](https://github.com/Alorel/conventional-changelog-personal/commit/9665cff))
+
 ## [2.0.1](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.0...2.0.1) (2018-08-17)
 
 
