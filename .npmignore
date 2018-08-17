@@ -5,3 +5,4 @@
 /prepare-gpg-key.sh
 /.releaserc.js
 /.travis.yml
+/yarn.lock
