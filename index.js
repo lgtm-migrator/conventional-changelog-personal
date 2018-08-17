@@ -5,7 +5,7 @@ function isGreenkeeperLockfileCommit(commit) {
 }
 
 function isGreenkeeperUpdate(commit) {
-  return commit.message && commit.scope === 'fix' && /update.+to\s+version\s+/i.test(commit.message);
+  return commit.message && /update.+to\s+version\s+/i.test(commit.message);
 }
 
 function getCfg() {
@@ -58,7 +58,11 @@ function processCommitType(commit) {
     return false;
   }
 
-  if (cfg.enable.fix && isGreenkeeperUpdate(commit)) {
+  if (isGreenkeeperUpdate(commit)) {
+    if (commit.type === 'fix') {
+      return false;
+    }
+
     commit.type = 'Dependency updates';
 
     return true;
