@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.0...2.0.1) (2018-08-17)
+
+
+### Bug Fixes
+
+* **package:** update json5 to version 2.0.0 ([cdb6401](https://github.com/Alorel/conventional-changelog-personal/commit/cdb6401))
+
 # [2.0.0](https://github.com/Alorel/conventional-changelog-personal/compare/1.2.0...2.0.0) (2018-08-16)
 
 
