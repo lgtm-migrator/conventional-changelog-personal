@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.2...2.0.3) (2018-08-20)
+
+
+### Bug Fixes
+
+* Now correctly excludes dev dependency updates from changelog but keeps prod dependency updates ([d66e319](https://github.com/Alorel/conventional-changelog-personal/commit/d66e319))
+
 ## [2.0.2](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.1...2.0.2) (2018-08-17)
 
 
