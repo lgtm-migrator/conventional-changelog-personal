@@ -59,7 +59,7 @@ function processCommitType(commit) {
   }
 
   if (isGreenkeeperUpdate(commit)) {
-    if (commit.type === 'fix') {
+    if (commit.type === 'chore') {
       return false;
     }
 
