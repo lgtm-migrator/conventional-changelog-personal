@@ -1,3 +1,20 @@
+## [2.0.4](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.3...2.0.4) (2018-09-12)
+
+
+### Bug Fixes
+
+* **isGreenkeeperLockfileCommit:** The check is now case-insensitive ([01e7316](https://github.com/Alorel/conventional-changelog-personal/commit/01e7316))
+
+
+### Maintenance
+
+* **package:** Use tilde dev dependency versions ([61e8861](https://github.com/Alorel/conventional-changelog-personal/commit/61e8861))
+
+
+### Reverts
+
+* chore(package): Use tilde dev dependency versions ([2a130fe](https://github.com/Alorel/conventional-changelog-personal/commit/2a130fe))
+
 ## [2.0.3](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.2...2.0.3) (2018-08-20)
 
 
