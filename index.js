@@ -1,7 +1,7 @@
 const cloneDeep = require('lodash/cloneDeep');
 
 function isGreenkeeperLockfileCommit(commit) {
-  return commit.scope === 'package' && (commit.message || '').includes('update lockfile');
+  return commit.scope === 'package' && (commit.message || '').toLowerCase().includes('update lockfile');
 }
 
 function isGreenkeeperUpdate(commit) {
