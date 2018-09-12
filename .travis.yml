@@ -17,8 +17,6 @@ script: if [[ $GH_TOKEN ]]; then yarn test; fi;
 
 cache:
   yarn: true
-  directories:
-  - node_modules
 
 before_cache: rm -rf node_modules/.cache
 
