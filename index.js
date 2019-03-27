@@ -1,11 +1,13 @@
 const cloneDeep = require('lodash/cloneDeep');
 
+const GK_REGEX = /update.+to\s+version\s+/i;
+
 function isGreenkeeperLockfileCommit(commit) {
   return commit.scope === 'package' && (commit.message || '').toLowerCase().includes('update lockfile');
 }
 
 function isGreenkeeperUpdate(commit) {
-  return commit.message && /update.+to\s+version\s+/i.test(commit.message);
+  return commit.message && GK_REGEX.test(commit.message);
 }
 
 function getCfg() {
