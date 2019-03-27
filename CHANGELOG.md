@@ -1,3 +1,20 @@
+# [2.1.0](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.4...2.1.0) (2019-03-27)
+
+
+### Features
+
+* Add 'tweak' commit type ([ce4927a](https://github.com/Alorel/conventional-changelog-personal/commit/ce4927a))
+
+
+### Maintenance
+
+* Update dependencies ([c4ced5b](https://github.com/Alorel/conventional-changelog-personal/commit/c4ced5b))
+
+
+### Performance Improvements
+
+* Reuse the same RegExp object for greenkeeper matching ([ba66505](https://github.com/Alorel/conventional-changelog-personal/commit/ba66505))
+
 ## [2.0.4](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.3...2.0.4) (2018-09-12)
 
 
