@@ -36,7 +36,8 @@ function getCfg() {
       test: 'Tests',
       build: 'Build System',
       ci: 'Build System',
-      chore: 'Maintenance'
+      chore: 'Maintenance',
+      tweak: 'Tweaks'
     },
     skipGreenkeeperLockfileCommit: true,
     ignoreReleaseScope: true
