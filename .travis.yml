@@ -2,12 +2,12 @@ language: node_js
 sudo: false
 
 node_js:
-- stable
-- lts/carbon
+  - stable
+  - lts/*
 
 before_install:
-- npm install -g greenkeeper-lockfile yarn
-- greenkeeper-lockfile-update
+  - npm install -g greenkeeper-lockfile yarn
+  - greenkeeper-lockfile-update
 
 install: yarn install --check-files
 
@@ -23,14 +23,14 @@ before_cache: rm -rf node_modules/.cache
 after_script: if [[ $GH_TOKEN ]]; then greenkeeper-lockfile-upload; fi;
 
 stages:
-- Test
-- name: Release
-  if: branch = master AND tag IS blank AND type = push
+  - Test
+  - name: Release
+    if: branch = master AND tag IS blank AND type = push
 
 jobs:
   include:
-  - stage: Release
-    node_js: lts/*
-    before_install: npm install -g yarn
-    script: if [[ $GH_TOKEN ]]; then semantic-release; fi;
-    after_script: []
+    - stage: Release
+      node_js: stable
+      before_install: npm install -g yarn
+      script: if [[ $GH_TOKEN ]]; then semantic-release; fi;
+      after_script: []
