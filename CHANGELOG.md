@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/Alorel/conventional-changelog-personal/compare/2.1.0...2.1.1) (2019-07-15)
+
+
+### Dependency updates
+
+* **package:** update lodash to version 4.17.14 ([70478e4](https://github.com/Alorel/conventional-changelog-personal/commit/70478e4)), closes [#8](https://github.com/Alorel/conventional-changelog-personal/issues/8)
+
 # [2.1.0](https://github.com/Alorel/conventional-changelog-personal/compare/2.0.4...2.1.0) (2019-03-27)
 
 
