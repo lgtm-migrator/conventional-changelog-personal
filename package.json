@@ -22,7 +22,7 @@
   "dependencies": {
     "conventional-changelog-angular": "^5.0.3",
     "json5": "^2.1.0",
-    "lodash": "^4.0.0"
+    "lodash": "^4.17.14"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.2",
