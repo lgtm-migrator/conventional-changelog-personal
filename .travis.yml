@@ -11,8 +11,6 @@ before_install:
 
 install: yarn install --check-files
 
-before_script: if [[ $GH_TOKEN ]]; then ./prepare-gpg-key.sh; fi;
-
 script: if [[ $GH_TOKEN ]]; then yarn test; fi;
 
 cache:
