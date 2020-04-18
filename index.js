@@ -150,9 +150,9 @@ module.exports = require('conventional-changelog-angular')
           commit.scope = '';
         }
 
-        if (typeof commit.hash === 'string') {
-          commit.hash = commit.hash.substring(0, 7);
-        }
+//         if (typeof commit.hash === 'string') {
+//           commit.hash = commit.hash.substring(0, 7);
+//         }
 
         processReferences(commit, context);
 
