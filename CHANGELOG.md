@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/Alorel/conventional-changelog-personal/compare/2.1.1...2.1.2) (2020-04-18)
+
+
+### Bug Fixes
+
+* stop substringing hash ([98639ee760bccc7940e63f4757030afffde29be5](https://github.com/Alorel/conventional-changelog-personal/commit/98639ee760bccc7940e63f4757030afffde29be5))
+
 ## [2.1.1](https://github.com/Alorel/conventional-changelog-personal/compare/2.1.0...2.1.1) (2019-07-15)
 
 
