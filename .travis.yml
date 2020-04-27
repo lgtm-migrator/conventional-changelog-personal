@@ -6,7 +6,7 @@ node_js:
   - lts/*
 
 before_install:
-  - npm install -g greenkeeper-lockfile yarn
+  - npm install -g greenkeeper-lockfile yarn@^1.22.4
   - greenkeeper-lockfile-update
 
 install: yarn install --check-files
