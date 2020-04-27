@@ -1,5 +1,3 @@
-const cloneDeep = require('lodash/cloneDeep');
-
 const GK_REGEX = /update.+to\s+version\s+/i;
 
 function isGreenkeeperLockfileCommit(commit) {
@@ -130,9 +128,7 @@ function processReferences(commit, ctx) {
 }
 
 module.exports = require('conventional-changelog-angular')
-  .then(ng$ => {
-    const ng = cloneDeep(ng$);
-
+  .then(ng => {
     Object.assign(ng.writerOpts, {
       transform(commit, context) {
         const discard = !(commit.notes || []).length;
@@ -150,9 +146,9 @@ module.exports = require('conventional-changelog-angular')
           commit.scope = '';
         }
 
-//         if (typeof commit.hash === 'string') {
-//           commit.hash = commit.hash.substring(0, 7);
-//         }
+        if (typeof commit.hash === 'string') {
+          commit.shortHash = commit.hash.substring(0, 7);
+        }
 
         processReferences(commit, context);
 
