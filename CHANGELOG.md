@@ -1,3 +1,15 @@
+## [2.1.3](https://github.com/Alorel/conventional-changelog-personal/compare/2.1.2...2.1.3) (2020-04-27)
+
+
+### Bug Fixes
+
+* commit hash is no longer omitted from changelogs ([1a5d460](https://github.com/Alorel/conventional-changelog-personal/commit/1a5d460262faf2306cacde3b060b6720e82c66e7))
+
+
+### Maintenance
+
+* update deps ([314111e](https://github.com/Alorel/conventional-changelog-personal/commit/314111edee35da608d860e7eacbebec55e9782fa)), closes [#15](https://github.com/Alorel/conventional-changelog-personal/issues/15) [#14](https://github.com/Alorel/conventional-changelog-personal/issues/14) [#11](https://github.com/Alorel/conventional-changelog-personal/issues/11) [#13](https://github.com/Alorel/conventional-changelog-personal/issues/13) [#12](https://github.com/Alorel/conventional-changelog-personal/issues/12)
+
 ## [2.1.2](https://github.com/Alorel/conventional-changelog-personal/compare/2.1.1...2.1.2) (2020-04-18)
 
 
